@@ -6,7 +6,7 @@
  */
 
 export const githubConfig = {
-  username: 'ramxcodes',
+  username: 'taralshah09',
   apiUrl: 'https://github-contributions-api.deno.dev',
 
   // Display settings

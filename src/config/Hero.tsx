@@ -27,69 +27,64 @@ import Github from '@/components/svgs/Github';
 import LinkedIn from '@/components/svgs/LinkedIn';
 import Mail from '@/components/svgs/Mail';
 import X from '@/components/svgs/X';
-import Bun from '@/components/technologies/Bun';
+import ExpressJs from '@/components/technologies/ExpressJs';
 import JavaScript from '@/components/technologies/JavaScript';
 import MongoDB from '@/components/technologies/MongoDB';
-import NextJs from '@/components/technologies/NextJs';
 import NodeJs from '@/components/technologies/NodeJs';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
-import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
-// Technology Components
-import TypeScript from '@/components/technologies/TypeScript';
+import SpringBoot from '@/components/technologies/SpringBoot';
 
 // Component mapping for skills
 export const skillComponents = {
-  TypeScript: TypeScript,
   ReactIcon: ReactIcon,
-  NextJs: NextJs,
-  Bun: Bun,
-  PostgreSQL: PostgreSQL,
   NodeJs: NodeJs,
   MongoDB: MongoDB,
-  Prisma: Prisma,
+  ExpressJs: ExpressJs,
+  SpringBoot: SpringBoot,
+  PostgreSQL: PostgreSQL,
   JavaScript: JavaScript,
 };
 
 export const heroConfig = {
   // Personal Information
-  name: 'Ram',
-  title: 'A Full Stack web developer.',
+  name: 'Taral Shah',
+  title: 'Software Engineer',
   avatar: '/assets/logo.png',
 
   // Skills Configuration
   skills: [
     {
-      name: 'Typescript',
-      href: 'https://www.typescriptlang.org/',
-      component: 'TypeScript',
-    },
-    {
-      name: 'React',
+      name: 'React JS',
       href: 'https://react.dev/',
       component: 'ReactIcon',
     },
     {
-      name: 'Next.js',
-      href: 'https://nextjs.org/',
-      component: 'NextJs',
+      name: 'Node.js',
+      href: 'https://nodejs.org/',
+      component: 'NodeJs',
     },
     {
-      name: 'Bun',
-      href: 'https://bun.sh/',
-      component: 'Bun',
+      name: 'MongoDB',
+      href: 'https://mongodb.com/',
+      component: 'MongoDB',
     },
     {
-      name: 'PostgreSQL',
-      href: 'https://www.postgresql.org/',
-      component: 'PostgreSQL',
+      name: 'Express.js',
+      href: 'https://expressjs.com/',
+      component: 'ExpressJs',
+    },
+    {
+      name: 'Spring Boot',
+      href: 'https://spring.io/projects/spring-boot',
+      component: 'SpringBoot',
     },
   ],
 
   // Description Configuration
   description: {
     template:
-      'I build interactive web apps using {skills:0}, {skills:1}, {skills:2}, {skills:3} and {skills:4}. With a focus on <b>UI</b> design. Enthusiastic about <b>Three.js</b>, driven by a keen eye for design.',
+      'I build scalable web applications using {skills:0}, {skills:1}, and {skills:2}. Experienced with {skills:3} and currently learning {skills:4}. Passionate about building products that solve real-world problems.',
   },
 
   // Buttons Configuration
@@ -97,7 +92,7 @@ export const heroConfig = {
     {
       variant: 'outline',
       text: 'Resume / CV',
-      href: '/resume',
+      href: 'https://drive.google.com/file/d/1NzA01Db9Us1uiQR8HdXVK0-SdKnd8O4a/view',
       icon: 'CV',
     },
     {
@@ -113,22 +108,22 @@ export const heroConfig = {
 export const socialLinks = [
   {
     name: 'X',
-    href: 'https://x.com/ramxcodes',
+    href: 'https://x.com/taralshah995',
     icon: <X />,
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/ramxcodes/',
+    href: 'https://www.linkedin.com/in/taralshah9/',
     icon: <LinkedIn />,
   },
   {
     name: 'Github',
-    href: 'https://github.com/ramxcodes',
+    href: 'https://github.com/taralshah09/',
     icon: <Github />,
   },
   {
     name: 'Email',
-    href: 'mailto:ramxcodes@gmail.com',
+    href: 'mailto:taralshah604@gmail.com',
     icon: <Mail />,
   },
 ];

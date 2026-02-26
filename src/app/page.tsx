@@ -1,7 +1,6 @@
 import Container from '@/components/common/Container';
 import About from '@/components/landing/About';
-import Blog from '@/components/landing/Blog';
-import CTA from '@/components/landing/CTA';
+import CompetitiveProfiles from '@/components/landing/CompetitiveProfiles';
 import Experience from '@/components/landing/Experience';
 import Github from '@/components/landing/Github';
 import Hero from '@/components/landing/Hero';
@@ -18,10 +17,11 @@ export default function page() {
       <Work />
       <About />
       <Github />
-      <Blog />
-      <CTA />
-      <Setup />
-      <Journey />
+      <CompetitiveProfiles />
+      {/* <Blog /> */}
+      {/* <CTA /> */}
+      {/* <Setup /> */}
+      {/* <Journey /> */}
     </Container>
   );
 }

@@ -5,7 +5,6 @@ import { ProjectCaseStudyFrontmatter } from '@/types/project';
 import rehypeHighlight from '@shikijs/rehype';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { Link } from 'next-view-transitions';
-import Image from 'next/image';
 
 import Github from '../svgs/Github';
 import Website from '../svgs/Website';
@@ -44,13 +43,11 @@ export function ProjectContent({ frontmatter, content }: ProjectContentProps) {
       {/* Hero Section */}
       <header className="mb-8 space-y-6">
         <div className="relative aspect-video overflow-hidden rounded-lg">
-          <Image
-            src={image}
-            alt={title}
-            fill
-            className="object-cover"
-            priority
-          />
+          <div className="flex h-full w-full items-center justify-center bg-black p-8 text-center">
+            <span className="text-4xl font-bold text-white uppercase tracking-widest">
+              {title}
+            </span>
+          </div>
         </div>
 
         <div className="space-y-4">

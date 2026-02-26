@@ -26,13 +26,19 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
       <div className="flex flex-col gap-2 md:flex-row md:justify-between">
         {/* Left Side */}
         <div className="flex items-center gap-4">
-          <Image
-            src={experience.image}
-            alt={experience.company}
-            width={100}
-            height={100}
-            className="size-12 rounded-md"
-          />
+          {experience.image.startsWith('/') ? (
+            <Image
+              src={experience.image}
+              alt={experience.company}
+              width={100}
+              height={100}
+              className="size-12 rounded-md"
+            />
+          ) : (
+            <div className="flex size-12 shrink-0 items-center justify-center rounded-md bg-neutral-100 font-bold text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400">
+              {experience.image}
+            </div>
+          )}
           <div className="flex flex-col">
             <div className="flex items-center gap-2">
               <h3

@@ -86,7 +86,11 @@ export default function Hero() {
               )}
             >
               {IconComponent && <IconComponent />}
-              <Link href={button.href}>{button.text}</Link>
+              {button.text === "Resume" ? (
+                <Link href={button.href} target="_blank">{button.text}</Link>
+              ) : (
+                <Link href={button.href}>{button.text}</Link>
+              )}
             </Button>
           );
         })}

@@ -76,9 +76,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <>
-      <Container className="py-16">
+      {/* <Container className="py-16">
         <div className="space-y-12">
-          {/* Back Button */}
           <div>
             <Button variant="ghost" asChild className="group">
               <Link href="/blog" className="flex items-center space-x-2">
@@ -88,10 +87,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </Button>
           </div>
 
-          {/* Blog Content */}
           <BlogContent frontmatter={post.frontmatter} content={post.content} />
 
-          {/* Related Posts */}
           {relatedPosts.length > 0 && (
             <div className="space-y-6">
               <Separator />
@@ -102,7 +99,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
           )}
 
-          {/* Back to Blog CTA */}
           <div className="text-center">
             <Separator className="mb-8" />
             <Button asChild size="lg">
@@ -111,7 +107,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
         </div>
       </Container>
-      <FontSizeControls />
+      <FontSizeControls /> */}
     </>
   );
 }
