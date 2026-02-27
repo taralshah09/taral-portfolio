@@ -14,7 +14,6 @@ import {
 } from '@/components/ui/dialog';
 import { type Project } from '@/types/project';
 import { Link } from 'next-view-transitions';
-import Image from 'next/image';
 import React, { useState } from 'react';
 
 import ArrowRight from '../svgs/ArrowRight';
@@ -34,13 +33,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
     <Card className="group h-full w-full overflow-hidden border-gray-100 p-0 shadow-none transition-all dark:border-gray-800">
       <CardHeader className="p-0">
         <div className="group relative aspect-video overflow-hidden">
-          <Image
-            className="h-full w-full object-cover"
-            src={project.image}
-            alt={project.title}
-            width={1920}
-            height={1080}
-          />
+          <div className="flex h-full w-full items-center justify-center bg-black p-4 text-center">
+            <span className="text-2xl font-bold tracking-wider text-white uppercase">
+              {project.title}
+            </span>
+          </div>
           {project.video && (
             <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
               <DialogTrigger asChild>
@@ -118,7 +115,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             <h4 className="text-secondary mb-2 text-sm font-medium">
               Technologies
             </h4>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 pb-2">
               {project.technologies.map((technology, index) => (
                 <Tooltip key={index}>
                   <TooltipTrigger>
