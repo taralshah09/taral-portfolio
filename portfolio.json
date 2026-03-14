@@ -1,0 +1,126 @@
+{
+  "about": {
+    "name": "Taral Shah",
+    "title": "Software Engineer",
+    "description": "I'm a Software Engineer with strong experience in MERN Stack, Shopify Liquid and currently learning Spring Boot. I love building scalable web applications and solving complex technical problems.",
+    "avatar": "/assets/taral_avatar.png",
+    "skills": [
+      {
+        "name": "React JS",
+        "href": "https://react.dev/"
+      },
+      {
+        "name": "Node.js",
+        "href": "https://nodejs.org/"
+      },
+      {
+        "name": "MongoDB",
+        "href": "https://mongodb.com/"
+      },
+      {
+        "name": "Express.js",
+        "href": "https://expressjs.com/"
+      },
+      {
+        "name": "Spring Boot",
+        "href": "https://spring.io/projects/spring-boot"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "First Draft",
+      "position": "Software Development Intern",
+      "location": "Remote",
+      "startDate": "June 2025",
+      "endDate": "Aug 2025",
+      "description": [
+        "Developed core features for an LLM-powered journalism platform using Next.js, Django, and PostgreSQL, implementing RESTful APIs that handled 10K+ daily requests with under 200ms response time while optimizing database queries to reduce execution time by 40%.",
+        "Engineered responsive UI components with lazy loading and code splitting in Next.js, improving page load times by 40%.",
+        "Built AI-powered content analysis features that processed 500+ articles daily with 92% accuracy."
+      ],
+      "technologies": ["Django", "Next.js", "PostgreSQL", "TailwindCss"]
+    },
+    {
+      "company": "MatchMyCV",
+      "position": "Software Development Intern",
+      "location": "Remote",
+      "startDate": "Aug 2024",
+      "endDate": "Dec 2024",
+      "description": [
+        "Engineered a production-grade, scalable distributed microservice for AI-based resume refinement using the OpenAI API, integrated with Amazon S3 and Docker to support 500+ users with 99.9% system reliability.",
+        "Redesigned legacy HTML pages into a responsive React + Redux frontend with lazy loading, reducing load times by 1.5 seconds.",
+        "Integrated Django REST APIs with database indexing to handle high-volume requests and improve throughput."
+      ],
+      "technologies": ["React", "Django", "PostgreSQL", "AWS", "Postman"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "TrackHire",
+      "description": "Full-stack job aggregation platform using Node.js (cron-based scraper), Spring Boot (REST backend), and React that collects recent openings from company career pages and niche platforms. Maintains 10K+ active listings with daily automated updates and implements JWT-based authentication with personalized email notifications.",
+      "technologies": [
+        "Spring Boot",
+        "Node.js",
+        "PostgreSQL",
+        "React",
+        "TailwindCss"
+      ],
+      "github": "https://github.com/taralshah09/TrackHire",
+      "live": "https://www.trackhire.me/"
+    },
+    {
+      "title": "WebOS",
+      "description": "OS-like browser desktop simulation with 5+ resizable windows, 5 draggable apps, persistent text editor, and terminal supporting 10+ Linux commands executed over 1.2K+ times. Architected a highly scalable backend with microservice-like boundaries and optimized MongoDB indexing to cut file retrieval latency by 40%.",
+      "technologies": ["Node.js", "Express", "MongoDB", "React", "TailwindCss"],
+      "github": "https://github.com/taralshah09/webOS",
+      "live": "https://webos-five-eosin.vercel.app/"
+    },
+    {
+      "title": "GDG Cloud Jams",
+      "description": "Built a leaderboard dashboard for GDG Cloud Jams, a hackathon event organized by Google Developer Groups. The dashboard displays the leaderboard of the hackathon and allows users to view the leaderboard of the hackathon.",
+      "technologies": ["React", "Node.js", "MongoDB", "Express"],
+      "github": "https://github.com/taralshah09/GDG_Cloud_Jam",
+      "live": "https://gdg-cloud-jam.vercel.app/"
+    },
+    {
+      "title": "WalletAPI",
+      "description": "A production-grade RESTful API for digital wallet and fixed deposit management with enterprise-level security, concurrency handling, and transactional integrity.",
+      "technologies": ["SpringBoot", "PostgreSQL", "Postman"],
+      "github": "https://github.com/taralshah09/wallet-api",
+      "live": "#"
+    },
+    {
+      "title": "CareerSetGo",
+      "description": "A comprehensive career development platform designed to empower students and professionals with AI-driven interview preparation, resume building, and skill enhancement tools. The platform features an intelligent interview simulator that provides instant feedback on responses, a resume builder with ATS optimization suggestions, and a curated learning path system to bridge skill gaps.",
+      "technologies": ["React", "Django", "PostgreSQL"],
+      "github": "https://github.com/taralshah09/CareerSetGo",
+      "live": "#"
+    },
+    {
+      "title": "Kanban Board View",
+      "description": "A Kanban board view that allows users to manage their tasks in a visual way. The board is divided into columns that represent the different stages of a task, and users can drag and drop tasks between columns to update their status.",
+      "technologies": ["React", "Node.js", "MongoDB", "Express"],
+      "github": "https://github.com/taralshah09/kanban_board_view",
+      "live": "https://taralkanban.vercel.app/"
+    }
+  ],
+  "competitive": {
+    "leetcode": {
+      "username": "taralshah99",
+      "profileUrl": "https://leetcode.com/taralshah99"
+    },
+    "codeforces": {
+      "username": "taralshah992005",
+      "profileUrl": "https://codeforces.com/profile/taralshah992005"
+    }
+  },
+  "cal_com": "https://cal.com/taralshah",
+  "socials": {
+    "twitter": "https://x.com/taralshah995",
+    "linkedin": "https://www.linkedin.com/in/taralshah9/",
+    "github": "https://github.com/taralshah09/",
+    "email": "taralshah604@gmail.com"
+  },
+  "resume": "https://drive.google.com/file/d/1NzA01Db9Us1uiQR8HdXVK0-SdKnd8O4a/view"
+}

@@ -13,10 +13,9 @@ export interface PageMeta {
 export const siteConfig = {
   name: heroConfig.name,
   title: 'Taral Shah - Software Engineer',
-  description:
-    'Portfolio of Taral Shah - Software Engineer specialized in MERN Stack and Spring Boot',
+  description: 'I code for living.',
   url: process.env.NEXT_PUBLIC_URL || 'http://localhost:3000',
-  ogImage: '/meta/opengraph-image.png',
+  ogImage: '/assets/taral_avatar.png',
   author: {
     name: about.name,
     twitter: '@taralshah995',
@@ -42,7 +41,7 @@ export const pageMetadata: Record<string, PageMeta> = {
   // Home page
   '/': {
     title: `${heroConfig.name} - ${heroConfig.title}`,
-    description: `${about.description} Explore my projects, experience, and technical expertise.`,
+    description: siteConfig.description,
     keywords: [
       'portfolio',
       'developer',
@@ -60,8 +59,24 @@ export const pageMetadata: Record<string, PageMeta> = {
     description:
       "Get in touch with me for collaborations, projects, or opportunities. I'd love to hear from you!",
     keywords: ['contact', 'hire', 'collaboration', 'freelance', 'developer'],
-    ogImage: '/assets/logo.png',
+    ogImage: '/assets/taral_avatar.png',
     twitterCard: 'summary',
+  },
+
+  // Services page
+  '/services': {
+    title: 'Services - What I Offer',
+    description:
+      'Explore the professional services I provide, from website development and automation to AI integration and technical support.',
+    keywords: [
+      'services',
+      'web development',
+      'automation',
+      'AI',
+      'technical help',
+    ],
+    ogImage: '/assets/taral_avatar.png',
+    twitterCard: 'summary_large_image',
   },
 
   // Work Experience page
@@ -179,6 +194,10 @@ export function generateMetadata(pathname: string) {
     keywords: pageMeta.keywords?.join(', '),
     authors: [{ name: siteConfig.author.name }],
     creator: siteConfig.author.name,
+    icons: {
+      icon: '/assets/taral_avatar.png',
+      apple: '/assets/taral_avatar.png',
+    },
     openGraph: {
       type: 'website',
       url: `${siteConfig.url}${pathname}`,
@@ -195,11 +214,11 @@ export function generateMetadata(pathname: string) {
       ],
     },
     twitter: {
-      card: pageMeta.twitterCard || 'summary_large_image',
-      title: pageMeta.title,
-      description: pageMeta.description,
+      card: 'summary_large_image',
+      title: 'Taral Shah - Software Engineer',
+      description: siteConfig.description,
+      images: ['/assets/webframe.png'],
       creator: siteConfig.author.twitter,
-      images: [pageMeta.ogImage || siteConfig.ogImage],
     },
     robots: {
       index: true,

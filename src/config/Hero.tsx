@@ -50,7 +50,7 @@ export const heroConfig = {
   // Personal Information
   name: 'Taral Shah',
   title: 'Software Engineer',
-  avatar: '/assets/logo.png',
+  avatar: '/assets/taral_avatar.png',
 
   // Skills Configuration
   skills: [
